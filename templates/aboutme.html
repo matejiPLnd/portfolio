@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About me</title>
+</head>
+<body>
+<center>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index">Home</a>
+          <a class="nav-link" href="{{ url_for('aboutme') }}">Dodawanie opinii</a>
+		  <a class="nav-link" href="{{ url_for('deleee') }}">Usuwanie opinii</a>
+          <a class="nav-link" href="{{ url_for('gallery') }}">Galleria</a>
+          <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </center>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <center>
+          
+<form action="{{ url_for("aboutme")}}" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="name">
+<label for="lastname">Komentarz:</label>
+<input type="text" id="text" name="text" placeholder="text">
+<button type="submit">Dodaj</button>
+
+        </center>
+
+</body>
+
+</html>

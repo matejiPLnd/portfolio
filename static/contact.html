@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+</head>
+<style>
+  * { 
+			margin: 0; 
+			padding: 0;
+		}
+		body { 
+			font: 100% normal Arial, Helvetica, sans-serif; 
+			background: #ffffff;
+		}
+		form, input, select, textarea {
+			margin:0; 
+			padding:0; 
+			color:#000000	;
+		}
+ 
+		div.box {
+			margin:0 auto;
+			width:500px;
+			background:#ffffff;
+			position:relative;
+			top:50px;
+			
+		}
+ 
+		div.box h1 { 
+			color:#000000;
+			font-size:18px;
+			text-transform:uppercase;
+			padding:5px 0 5px 55px;
+			
+		}
+ 
+		div.box label {
+			width:100%;
+			display: block;
+			background:#ffffff;
+			
+			padding:10px 0 10px 0;
+		}
+ 
+		div.box label span {
+			display: block;
+			color:#000000;
+			font-size:12px;
+			float:left;
+			width:100px;
+			text-align:right;
+			padding:5px 20px 0 0;
+		}
+ 
+		div.box .wpis {
+			padding:10px 10px;
+			width:200px;
+			background:#ffffff;
+			border-bottom: 1px double #171717;
+			border-top: 1px double #171717;
+			border-left:1px double #333333;
+			border-right:1px double #333333;
+		}
+ 
+		div.box .wiadomosc {
+			padding:7px 7px;
+			width:350px;
+			background:#ffffff;
+			border-bottom: 1px double #171717;
+			border-top: 1px double #171717;
+			border-left:1px double #333333;
+			border-right:1px double #333333;
+			overflow:hidden;
+			height:150px;
+		}
+ 
+		div.box .button	{
+			margin:0 0 10px 0;
+			padding:4px 7px;
+			background:#ffffff;
+			border:0px;
+			position: relative;
+			top:10px;
+			left:382px;
+			width:100px;
+			border-bottom: 1px double #660000;
+			border-top: 1px double #660000;
+			border-left:1px double #660000;
+			border-right:1px double #660000;
+		}  
+</style>
+<body>
+    <center>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index">Home</a>
+				  <a class="nav-link" href="aboutme">Dodawanie opinii</a>
+				  <a class="nav-link" href="deleee">Usuwanie opinii</a>
+                  <a class="nav-link" href="gallery">Galleria</a>
+                  <a class="nav-link" href="contact">Contact</a>
+                </div>
+              </div>
+            </div>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+          </nav>
+          
+        </center>
+        
+    <form>          
+        <div class="box">             
+        <h1>Formularz kontaktowy</h1>             
+        <label>
+        <span>Nazwa użytkownika	:</span>                
+        <input type="text" class="wpis" name="nazwa" id="nazwa"/>             
+        </label>              
+        <label>                
+        <span>E-mail :</span>
+        <input type="text" class="wpis" name="email" id="email"/>             
+        </label>              
+        <label>                 
+        <span>Temat :</span>                 
+        <input type="text" class="wpis" name="temat" id="temat"/>             
+        </label>             
+        <label>                 
+        <span>Wiadomość :</span>                 
+        <textarea class="wiadomosc" name="wiadomosc" id="tresc"></textarea>                 
+        <input type="button" class="button" value="Wyślj" />             
+        </label>                                  
+        </div>     
+        </form>
+
+<center><p><a href="index">HOME</a></center>
+
+</body>
+</html>

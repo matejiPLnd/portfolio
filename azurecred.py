@@ -1,0 +1,5 @@
+AZDBSERVER ='mateuszkuletaserver.database.windows.net'
+AZDBNAME = 'mateuszkuletasql'
+AZDBUSER = 'mateji'
+AZDBPW = 'Kolkolkol11!'
+AZDBDRIVER = '{ODBC Driver17 for SQL Server}'
